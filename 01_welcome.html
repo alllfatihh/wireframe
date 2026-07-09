@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rancangan Halaman Utama</title>
+    <style>
+        
+body {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    background-color: #f0f0f0;
+    color: #000;
+    margin: 0;
+    padding: 40px;
+}
+.wireframe-container {
+    width: 1024px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 3px solid #000000;
+    padding: 30px;
+    box-sizing: border-box;
+    min-height: 650px;
+    position: relative;
+    box-shadow: 5px 5px 0px #000;
+}
+.header {
+    border: 2px dashed #000;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fafafa;
+}
+.logo-placeholder {
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #000;
+    padding: 5px 10px;
+}
+.user-placeholder {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.avatar-circle {
+    width: 30px;
+    height: 30px;
+    border: 2px dashed #000;
+    border-radius: 50%;
+    background: #eee;
+}
+.layout-sidebar {
+    display: flex;
+    gap: 20px;
+}
+.sidebar {
+    width: 220px;
+    border: 2px dashed #000;
+    padding: 15px;
+    min-height: 500px;
+    background: #fafafa;
+    box-sizing: border-box;
+}
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar-menu li {
+    padding: 10px;
+    border: 1px dashed #ccc;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.sidebar-menu li.active {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+.main-content {
+    flex-grow: 1;
+    border: 2px dashed #000;
+    padding: 20px;
+    min-height: 500px;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+.breadcrumb {
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: #666;
+}
+.box-placeholder {
+    border: 2px dashed #999;
+    background: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.input-group {
+    margin-bottom: 15px;
+}
+.input-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 2px dashed #000;
+    box-sizing: border-box;
+    background: #fff;
+    font-family: inherit;
+}
+.btn {
+    border: 2px solid #000;
+    padding: 10px 20px;
+    display: inline-block;
+    background: #e0e0e0;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+.btn-primary {
+    background: #000;
+    color: #fff;
+}
+.btn-danger {
+    background: #fff;
+    border: 2px dashed red;
+    color: red;
+}
+.table-wireframe {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.table-wireframe th, .table-wireframe td {
+    border: 2px dashed #000;
+    padding: 10px;
+    text-align: left;
+}
+.table-wireframe th {
+    background: #e8e8e8;
+}
+.caption {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    border-top: 1px solid #000;
+    padding-top: 15px;
+}
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.card {
+    border: 2px dashed #000;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.badge {
+    border: 1px solid #000;
+    padding: 2px 6px;
+    font-size: 11px;
+    background: #eee;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <div class="wireframe-container">
+        
+<div class="header">
+    <div class="logo-placeholder">LMS MATEMATIKA</div>
+    <div>
+        <button class="btn">Masuk</button>
+        <button class="btn btn-primary">Daftar</button>
+    </div>
+</div>
+<div class="box-placeholder" style="padding: 40px; margin-bottom: 30px; background: #fff;">
+    <div class="grid-2" style="align-items: center; text-align: left;">
+        <div>
+            <h1 style="font-size: 28px; margin-top: 0;">BELAJAR MATEMATIKA LEBIH MUDAH & MENYENANGKAN</h1>
+            <p style="color: #666; font-size:14px;">Platform E-Learning interaktif yang dilengkapi dengan kuis dinamis berbasis variabel acak dan asisten kecerdasan buatan (AI).</p>
+            <div style="margin-top: 25px;">
+                <button class="btn btn-primary" style="font-size: 16px;">Mulai Belajar Sekarang</button>
+            </div>
+        </div>
+        <div class="box-placeholder" style="height: 180px; display:flex; justify-content:center; align-items:center;">
+            [ Ilustrasi Matematika ]
+        </div>
+    </div>
+</div>
+<div class="grid-3">
+    <div class="card" style="text-align:center;">
+        <h4>Kuis Dinamis</h4>
+        <p style="font-size: 12px; color: #666;">Setiap kuis menggunakan angka acak.</p>
+    </div>
+    <div class="card" style="text-align:center;">
+        <h4>Asisten AI</h4>
+        <p style="font-size: 12px; color: #666;">Guru dibantu kecerdasan buatan.</p>
+    </div>
+    <div class="card" style="text-align:center;">
+        <h4>Sequential Learning</h4>
+        <p style="font-size: 12px; color: #666;">Belajar terstruktur secara urut.</p>
+    </div>
+</div>
+<div class="caption">Gambar 3.1: Rancangan Antarmuka Halaman Welcome / Landing Page</div>
+
+    </div>
+</body>
+</html>
