@@ -27,7 +27,10 @@
     { value: '24_profil.html', text: '24. Halaman Profil Pengguna' }
   ];
 
-  const currentFile = window.location.pathname.split('/').pop() || '01_welcome.html';
+  let currentFile = window.location.pathname.split('/').pop() || '01_welcome.html';
+  if (currentFile === 'index.html' || currentFile === '') {
+    currentFile = '01_welcome.html';
+  }
   const currentIndex = pages.findIndex(p => p.value === currentFile);
 
   // 2. Render Floating Panel
